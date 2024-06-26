@@ -27,14 +27,16 @@ export default function Header() {
         <div className="container mx-auto p-5 flex justify-between items-center">
 
         <div className="logo">
-            <img src="" className='border' width={100} height={50} alt="" />
+            <img src={!scrolled ? '/logo/white.png' : '/logo/blue.png'} className='w-[100px]'  alt="" />
         </div>
         <nav>
             <ul className='flex gap-10 font-semibold'>
-                <Link to={'/'} className='cursor-pointer underline leading-loose'>Home</Link>
-                <Link to={path.whyChooseBonds} className='cursor-pointer underline leading-loose'>Why Choose Bonds?</Link>
-                <Link to={'/'} className='cursor-pointer underline leading-loose'>Markets </Link>
-                <Link to={path.contactUs} className='cursor-pointer underline leading-loose'>Contact Us</Link>
+
+                <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Home</Link></li>
+                <li><Link to={path.whyChooseBonds} className='cursor-pointer underline leading-loose'>Why Choose Bonds?</Link></li>
+                <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Markets </Link></li>
+                <li><Link to={path.topNational} className='cursor-pointer underline leading-loose'>Top National Picks </Link></li>
+                <li><Link to={path.contactUs} className='cursor-pointer underline leading-loose'>Contact Us</Link></li>
             </ul>
         </nav>
         </div>

@@ -6,7 +6,7 @@ export default function TopCanadian() {
   return (
     <>
 
-<div className=' bg-cover bg-top relative' style={{backgroundImage:'url(https://bondmarketquotes.com/wp-content/uploads/2022/05/slid2.jpg)'}}>
+<div className=' bg-cover bg-center relative' style={{backgroundImage:'url(/img/home/bg.jpg)'}}>
         <div className="flex flex-col gap-5 justify-center items-center w-full min-h-[500px] bg-black/40 text-white text-center">
           <h1 className='text-2xl lg:text-5xl'>Our Top Canadian Picks</h1>
         </div>

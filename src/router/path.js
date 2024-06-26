@@ -5,5 +5,6 @@ export const path = {
     toUK:'/our-top-uk-picks',
     topAustralian:'/our-top-australian-picks',
     topCanadian:'/our-top-canadian-picks',
-    topEuropean:"/our-top-european-picks"
+    topEuropean:"/our-top-european-picks",
+    topNational:"/our-top-national-picks",
 }

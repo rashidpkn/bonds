@@ -1,5 +1,5 @@
-import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import { path } from './path'
 import Home from '../pages/home'
 import WhyChooseUs from '../pages/why-choose-us'
@@ -9,8 +9,21 @@ import TopUK from '../pages/top-uk'
 import TopAustralian from '../pages/top-australian'
 import TopCanadian from '../pages/top-canadian'
 import TopEuropean from '../pages/top-european'
+import TopNational from '../pages/top-national'
 
 export default function Router() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smoothly scrolls to the top
+    });
+  }, [location.pathname]);
+
+
+
   return (
     <Routes>
       <Route path={path.root} element={<MainLayout/>}>
@@ -21,6 +34,7 @@ export default function Router() {
         <Route path={path.topAustralian} element={<TopAustralian/>} />
         <Route path={path.topCanadian} element={<TopCanadian/>} />
         <Route path={path.topEuropean} element={<TopEuropean/>} />
+        <Route path={path.topNational} element={<TopNational/>} />
         
       </Route>
     </Routes>

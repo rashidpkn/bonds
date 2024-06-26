@@ -3,7 +3,7 @@ import React from 'react'
 export default function WhyChooseUs() {
   return (
     <>
-    <div className=' bg-cover bg-top relative' style={{backgroundImage:'url(https://bondmarketquotes.com/wp-content/uploads/2022/05/slid1.jpg)'}}>
+    <div className=' bg-cover bg-center relative' style={{backgroundImage:'url(/img/home/bg.jpg)'}}>
         <div className="flex flex-col gap-5 justify-center items-center w-full min-h-[500px] bg-black/40 text-white text-center">
           <h1 className='text-2xl lg:text-5xl'>Why Choose Us</h1>
           <p className='lg:text-2xl font-light px-[5%] '>Investors buy bonds because: They provide a predictable income stream. Typically, bonds pay interest twice a year. If the bonds are held to maturity, bondholders get back the entire principal, so bonds are a way to preserve capital while investing.</p>
@@ -20,7 +20,7 @@ export default function WhyChooseUs() {
 
         </div>
         <div className="">
-          <img className='w-full' src="https://bondmarketquotes.com/wp-content/uploads/2022/05/ser1innr.jpg" alt="" />
+          <img className='w-full h-[500px] object-cover object-bottom' src="/img/home/uk.jpg" alt="" />
         </div>
       </div>
     </div>

@@ -7,7 +7,7 @@ export default function MainLayout() {
   return (
     <>
     <Header/>
-    <main className='relative -top-[91px]'>
+    <main className='relative -top-[101px]'>
     <Outlet/>
     </main>
     <Footer/>

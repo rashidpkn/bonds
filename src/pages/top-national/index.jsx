@@ -1,20 +1,20 @@
 import React, { useState } from 'react'
-import { australianBonds } from '../../data/bonds'
 import { BondRow } from '../../shared/BondRows'
+import { nationalBonds } from '../../data/bonds'
 
-export default function TopAustralian() {
+export default function TopNational() {
   return (
     <>
 
 <div className=' bg-cover bg-center relative' style={{backgroundImage:'url(/img/home/bg.jpg)'}}>
         <div className="flex flex-col gap-5 justify-center items-center w-full min-h-[500px] bg-black/40 text-white text-center">
-          <h1 className='text-2xl lg:text-5xl'>Our Top Australian Picks</h1>
+          <h1 className='text-2xl lg:text-5xl'>Our Top National Picks</h1>
         </div>
     </div>
 
     <div className="my-10 text-center space-y-10 container mx-auto px-[5%]">
-    <h2 className='text-2xl lg:text-5xl'>Our Top Australian Picks</h2>
-        <p className='text-black/60 '>This list is designed to keep investors up to date with the highest yielding bonds available on the Australian market. All bonds have been carefully selected based on the yield and security of the issuer.</p>
+    <h2 className='text-2xl lg:text-5xl'>Our Top National Picks</h2>
+        <p className='text-black/60 '>This list is designed to keep investors up to date with the highest yielding bonds available on the National market. All bonds have been carefully selected based on the yield and security of the issuer.</p>
         <div className="overflow-x-auto ">
 
             <table className=' border-collapse mx-auto whitespace-nowrap'>
@@ -31,7 +31,7 @@ export default function TopAustralian() {
                 </thead>
                 <tbody>
 
-                    {australianBonds.map(bond=><BondRow key={bond.issuerName}   bond={bond} />)}
+                    {nationalBonds.map(bond=><BondRow key={bond.issuerName}   bond={bond} />)}
                     
                 </tbody>
             </table>
