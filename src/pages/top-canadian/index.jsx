@@ -6,7 +6,7 @@ export default function TopCanadian() {
   return (
     <>
 
-<div className=' bg-cover bg-center relative' style={{backgroundImage:'url(/img/home/bg.jpg)'}}>
+<div className=' bg-cover bg-center relative' style={{backgroundImage:'url(/img/album/Canadian.jpg)'}}>
         <div className="flex flex-col gap-5 justify-center items-center w-full min-h-[500px] bg-black/40 text-white text-center">
           <h1 className='text-2xl lg:text-5xl'>Our Top Canadian Picks</h1>
         </div>
@@ -19,7 +19,7 @@ export default function TopCanadian() {
 
             <table className=' border-collapse mx-auto whitespace-nowrap'>
                 <thead>
-                    <tr className='border'>
+                    <tr className=' bg-[#133269] text-white border'>
                         <th align='center' className='border px-2 py-5'>Issuer Name</th>
                         <th align='center' className='border px-2 py-5'>Annual Coupon <br /> Rate (% p.a)</th>
                         <th align='center' className='border px-2 py-5'>ISIN</th>

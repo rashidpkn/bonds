@@ -5,7 +5,7 @@ import { path } from '../../router/path'
 export default function Footer() {
   return (
     
-    <div className='  bg-[#52bce8] font-lato pt-5 text-black'>
+    <div className='  bg-[#133269] font-lato pt-5 text-white/45'>
             <div className="container mx-auto grid lg:grid-cols-4 px-[5%] gap-5 text-center lg:text-left">
                 <div className="flex flex-col gap-2">
                     <h4 className='text-xl font-bold'>About Bond  Quotes</h4>
@@ -30,8 +30,10 @@ export default function Footer() {
 
                 <div className="flex flex-col gap-1">
                     <h4 className=' text-xl font-bold'>Contact Details</h4>
-                    <a href="mailto:info@bondmarketquotes.com"> info@bondmarketquotes.com</a>
-                    <p> Floor 7, 8 Devonshire Square, London EC2M 4PL, UK</p>
+                    <a href="mailto:info@bondmarketquotes.com"> 
+info@hybondquotes.com
+</a>
+                    <p>20 primrose Street, London, EC2A 2EW </p>
                 </div>
 
             </div>

@@ -10,7 +10,7 @@ export default function Search() {
                     <h2 className='text-4xl font-medium text-[#444444] text-center'>SEARCH MARKET BONDS</h2>
                     <div className="grid grid-cols-10 gap-2 w-full lg:px-[10%] ">
                         <input type="text" placeholder='Search By Issuer Name or ISIN Number'  className='col-span-full lg:col-span-8 h-12 px-5 bg-[#eaeaea] rounded-md'  value={name} onChange={e=>setName(e.target.value)}/>
-                        <button className='col-span-full lg:col-span-2 bg-[#52bce8] text-black font-medium rounded-md py-3'
+                        <button className='col-span-full lg:col-span-2 bg-[#133269] text-white font-medium rounded-md py-3'
                         onClick={()=>{
                           const bond =   bonds.find(b=>b.isin.toLowerCase().includes(name.toLowerCase()) || b.issuerName.toLowerCase().includes(name.toLowerCase()))
                          if(!name){ 

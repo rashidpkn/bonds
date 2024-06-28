@@ -44,24 +44,24 @@ let Ukbonds = [
         issueDate: "27th June 1995",
         maturityDate: "27th June 2025"
     },
-    {
-        issuerName: "Provident Financial Ltd",
-        annualCouponRate: 5.125,
-        isin: "XS1209091856",
-        frequency: "Semi-Annual",
-        type:"Fixed",
-        issueDate: "9th April 2015",
-        maturityDate: "9th October 2023"
-    },
-    {
-        issuerName: "The Bankers Investment Trust",
-        annualCouponRate: 8.00,
-        isin: "GB0000871771",
-        frequency: "Semi-Annual",
-        type:"Fixed",
-        issueDate: "28th June 2002",
-        maturityDate: "31st October 2023"
-    },
+    // {
+    //     issuerName: "Provident Financial Ltd",
+    //     annualCouponRate: 5.125,
+    //     isin: "XS1209091856",
+    //     frequency: "Semi-Annual",
+    //     type:"Fixed",
+    //     issueDate: "9th April 2015",
+    //     maturityDate: ""
+    // },
+    // {
+    //     issuerName: "The Bankers Investment Trust",
+    //     annualCouponRate: 8.00,
+    //     isin: "GB0000871771",
+    //     frequency: "Semi-Annual",
+    //     type:"Fixed",
+    //     issueDate: "28th June 2002",
+    //     maturityDate: ""
+    // },
     {
         issuerName: "UK Treasury",
         annualCouponRate: 6.00,
@@ -201,24 +201,24 @@ let australianBonds = [
         issueDate: "23rd May 2018",
         maturityDate: "23rd May 2028"
     },
-    {
-        issuerName: "National Australia Bank Ltd",
-        annualCouponRate: 3.250,
-        isin: "XS1732146185",
-        frequency: "Annually",
-        type:"Fixed",
-        issueDate: "11th December 2017",
-        maturityDate: "11th December 2024"
-    },
-    {
-        issuerName: "Next Generation Clubs Australia Pty Ltd",
-        annualCouponRate: 7.900,
-        isin: "AU3CB0253243",
-        frequency: "Quarterly",
-        type:"Fixed",
-        issueDate: "22nd June 2018",
-        maturityDate: "22nd December 2024"
-    },
+    // {
+    //     issuerName: "National Australia Bank Ltd",
+    //     annualCouponRate: 3.250,
+    //     isin: "XS1732146185",
+    //     frequency: "Annually",
+    //     type:"Fixed",
+    //     issueDate: "11th December 2017",
+    //     maturityDate: ""
+    // },
+    // {
+    //     issuerName: "Next Generation Clubs Australia Pty Ltd",
+    //     annualCouponRate: 7.900,
+    //     isin: "AU3CB0253243",
+    //     frequency: "Quarterly",
+    //     type:"Fixed",
+    //     issueDate: "22nd June 2018",
+    //     maturityDate: ""
+    // },
     {
         issuerName: "Qantas Airways",
         annualCouponRate: 5.250,
@@ -237,24 +237,24 @@ let australianBonds = [
         issueDate: "14th March 2008",
         maturityDate: "14th March 2033"
     },
-    {
-        issuerName: "Virgin Australia Holdings Ltd",
-        annualCouponRate: 8.250,
-        isin: "AU3CB0253367",
-        frequency: "Semi-Annual",
-        type:"Fixed",
-        issueDate: "30th May 2018",
-        maturityDate: "30th May 2023"
-    },
-    {
-        issuerName: "Westpac Banking Corporation",
-        annualCouponRate: 5.250,
-        isin: "AU3CB0216240",
-        frequency: "Annually",
-        type:"Fixed",
-        issueDate: "21st November 2013",
-        maturityDate: "21st November 2023"
-    }
+    // {
+    //     issuerName: "Virgin Australia Holdings Ltd",
+    //     annualCouponRate: 8.250,
+    //     isin: "AU3CB0253367",
+    //     frequency: "Semi-Annual",
+    //     type:"Fixed",
+    //     issueDate: "30th May 2018",
+    //     maturityDate: ""
+    // },
+    // {
+    //     issuerName: "Westpac Banking Corporation",
+    //     annualCouponRate: 5.250,
+    //     isin: "AU3CB0216240",
+    //     frequency: "Annually",
+    //     type:"Fixed",
+    //     issueDate: "21st November 2013",
+    //     maturityDate: ""
+    // }
 ]
 
 let canadianBonds = [
@@ -285,15 +285,15 @@ let canadianBonds = [
         issueDate: "15th May 1991",
         maturityDate: "15th May 2031"
     },
-    {
-        issuerName: "Canadian Pacific Railway Co",
-        annualCouponRate: 6.910,
-        isin: "CA13645RAA29",
-        frequency: "Semi-Annual",
-        type:"Fixed",
-        issueDate: "1st October 1999",
-        maturityDate: "1st October 2024"
-    },
+    // {
+    //     issuerName: "Canadian Pacific Railway Co",
+    //     annualCouponRate: 6.910,
+    //     isin: "CA13645RAA29",
+    //     frequency: "Semi-Annual",
+    //     type:"Fixed",
+    //     issueDate: "1st October 1999",
+    //     maturityDate: ""
+    // },
     {
         issuerName: "Dais Holdings",
         annualCouponRate: 12.0,
@@ -375,15 +375,15 @@ let canadianBonds = [
         issueDate: "20th April 2009",
         maturityDate: "22nd April 2039"
     },
-    {
-        issuerName: "Royal Bank of Canada",
-        annualCouponRate: 9.300,
-        isin: "CA780087BF80",
-        frequency: "Semi-Annual",
-        type:"Fixed",
-        issueDate: "8th June 1993",
-        maturityDate: "8th June 2023"
-    },
+    // {
+    //     issuerName: "Royal Bank of Canada",
+    //     annualCouponRate: 9.300,
+    //     isin: "CA780087BF80",
+    //     frequency: "Semi-Annual",
+    //     type:"Fixed",
+    //     issueDate: "8th June 1993",
+    //     maturityDate: ""
+    // },
     {
         issuerName: "Toronto-Dominion Bank",
         annualCouponRate: 9.150,

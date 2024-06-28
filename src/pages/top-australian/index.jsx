@@ -6,7 +6,7 @@ export default function TopAustralian() {
   return (
     <>
 
-<div className=' bg-cover bg-center relative' style={{backgroundImage:'url(/img/home/bg.jpg)'}}>
+<div className=' bg-cover bg-top relative' style={{backgroundImage:'url(/img/album/Australian.jpg)'}}>
         <div className="flex flex-col gap-5 justify-center items-center w-full min-h-[500px] bg-black/40 text-white text-center">
           <h1 className='text-2xl lg:text-5xl'>Our Top Australian Picks</h1>
         </div>
@@ -17,9 +17,9 @@ export default function TopAustralian() {
         <p className='text-black/60 '>This list is designed to keep investors up to date with the highest yielding bonds available on the Australian market. All bonds have been carefully selected based on the yield and security of the issuer.</p>
         <div className="overflow-x-auto ">
 
-            <table className=' border-collapse mx-auto whitespace-nowrap'>
+            <table className='  border-collapse mx-auto whitespace-nowrap'>
                 <thead>
-                    <tr className='border'>
+                    <tr className='bg-[#133269] text-white border'>
                         <th align='center' className='border px-2 py-5'>Issuer Name</th>
                         <th align='center' className='border px-2 py-5'>Annual Coupon <br /> Rate (% p.a)</th>
                         <th align='center' className='border px-2 py-5'>ISIN</th>
