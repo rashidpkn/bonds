@@ -3,7 +3,7 @@ import React from 'react'
 export default function ContactUs() {
   return (
     <>
-    <div className=' bg-cover bg-bottomD relative' style={{backgroundImage:'url(/img/album/contact.jpg)'}}>
+    <div className=' bg-cover bg-bottomD relative' style={{backgroundImage:'url(/img/album/contact2.jpg)'}}>
         <div className="flex flex-col gap-5 justify-center items-center w-full min-h-[500px] bg-black/40 text-white text-center">
           <h1 className='text-2xl lg:text-5xl'>Contact Us</h1>
         </div>

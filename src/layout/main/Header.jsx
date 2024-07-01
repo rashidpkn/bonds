@@ -27,7 +27,7 @@ export default function Header() {
         <div className="container mx-auto p-5 flex justify-between items-center">
 
         <div className="logo">
-            <img src={!scrolled ? '/logo/white.png' : '/logo/bondlogo2.png'} className='w-[100px]'  alt="" />
+            <img src={!scrolled ? '/logo/whitelogo.png' : '/logo/bluelogo.png'} className='w-[100px]'  alt="" />
         </div>
         <nav>
             <ul className='flex gap-10 font-semibold'>
