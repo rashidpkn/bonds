@@ -513,7 +513,66 @@ let europeanBonds = [
         type:"Fixed",
         issueDate: "20th December 2018",
         maturityDate: "N/A"
-    }
+    },
+
+
+    {
+        issuerName: "Spanish Government",
+        annualCouponRate: 5.15,
+        isin: "ES00000127E4",
+        frequency: "Annual",
+        type:"Fixed",
+        issueDate: "February 10, 2015",
+        maturityDate: "February 10, 2026"
+    },
+    
+    {
+        issuerName: "French Government",
+        annualCouponRate: 6.00,
+        isin: "FR0000571150",
+        frequency: "Annual",
+        type:"Fixed",
+        issueDate: "October 25, 1993",
+        maturityDate: "October 25, 2025"
+    },
+    
+    {
+        issuerName: " German Government",
+        annualCouponRate:6.25 ,
+        isin: "DE0001135044",
+        frequency: "Annual",
+        type:"Fixed",
+        issueDate: "June 1, 2000",
+        maturityDate: "January 4, 2030"
+    },
+    
+    {
+        issuerName: " Ireland Government",
+        annualCouponRate:5.72 ,
+        isin: "IE00B7XWNN51",
+        frequency: "Annual",
+        type:"Fixed",
+        issueDate: "July 20, 2017",
+        maturityDate: "July 20, 2027"
+    },
+    {
+        issuerName: "Italy Government",
+        annualCouponRate: 5.75,
+        isin: "IT0005170839",
+        frequency: "Annual",
+        type:"Fixed",
+        issueDate: "February 1, 2019",
+        maturityDate: "February 1, 2029"
+    },
+    {
+        issuerName: " Portugal Government",
+        annualCouponRate: 5.65,
+        isin: "PTOTEWOE0003",
+        frequency: "Annual",
+        type:"Fixed",
+        issueDate: "October 15, 2015",
+        maturityDate: "October 15, 2025"
+    },
 ]
 
 const nationalBonds = [

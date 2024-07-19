@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { path } from '../../router/path';
 
 export default function Header() {
+  const {  } = useLocation()
+  const [] = useState("")
 
     const [scrolled, setScrolled] = useState(false)
 
@@ -29,13 +31,27 @@ export default function Header() {
         <div className="logo">
             <img src={!scrolled ? '/logo/whitelogo.png' : '/logo/bluelogo.png'} className='w-[100px]'  alt="" />
         </div>
-        <nav>
-            <ul className='flex gap-10 font-semibold'>
+        <nav className=''>
+            <ul className='flex gap-10 text font-semibold '>
 
                 <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Home</Link></li>
                 <li><Link to={path.whyChooseBonds} className='cursor-pointer underline leading-loose'>Why Choose Bonds?</Link></li>
-                <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Markets </Link></li>
-                <li><Link to={path.topNational} className='cursor-pointer underline leading-loose'>Top National Picks </Link></li>
+                {/* <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Markets </Link></li> */}
+                <div className="relative group ">
+              <NavLink  className='cursor-pointer underline leading-loose'>Markets</NavLink>
+              
+            <div className={`absolute border  font-thin text-base p-6 space-y-5 text-white w-[290px]  hidden group-hover:flex flex-col   -left-[140px]  `}>
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white "><NavLink to={path.toUK} >Our Top UK Picks</NavLink></li>
+            <hr className="w-[230px]" />
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white"><NavLink  to={path.topAustralian}>Our Top Australian Picks            </NavLink></li>
+            <hr className="w-[230px]" />
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white"><NavLink to={path.topCanadian} >Our Top Canadian Picks            </NavLink></li>
+            <hr className="w-[230px]" />
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white"><NavLink  to={path.topEuropean}>Our Top European Picks            </NavLink></li>
+
+            </div>
+            </div>
+                {/* <li><Link to={path.topNational} className='cursor-pointer underline leading-loose'>Top National Picks </Link></li> */}
                 <li><Link to={path.contactUs} className='cursor-pointer underline leading-loose'>Contact Us</Link></li>
             </ul>
         </nav>

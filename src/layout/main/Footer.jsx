@@ -21,7 +21,7 @@ export default function Footer() {
 
                 <div className="flex flex-col gap-1">
                     <h4 className='text-xl font-bold'>Markets</h4>
-                    <Link to={path.topNational}>  Our Top National Picks</Link>
+                    {/* <Link to={path.topNational}>  Our Top National Picks</Link> */}
                     <Link to={path.toUK}>  Our Top UK Picks</Link>
                     <Link to={path.topAustralian}>  Our Top Australian Picks</Link>
                     <Link to={path.topCanadian}>  Our Top Canadian Picks</Link>
