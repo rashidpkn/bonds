@@ -7,4 +7,5 @@ export const path = {
     topCanadian:'/our-top-canadian-picks',
     topEuropean:"/our-top-european-picks",
     topNational:"/our-top-national-picks",
+    bond1:"/bond1",
 }

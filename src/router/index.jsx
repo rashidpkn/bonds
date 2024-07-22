@@ -10,6 +10,7 @@ import TopAustralian from '../pages/top-australian'
 import TopCanadian from '../pages/top-canadian'
 import TopEuropean from '../pages/top-european'
 import TopNational from '../pages/top-national'
+import Bond1 from '../pages/bond1'
 
 export default function Router() {
 
@@ -35,7 +36,8 @@ export default function Router() {
         <Route path={path.topCanadian} element={<TopCanadian/>} />
         <Route path={path.topEuropean} element={<TopEuropean/>} />
         <Route path={path.topNational} element={<TopNational/>} />
-        
+        <Route path={path.bond1} element={<Bond1/>} />
+
       </Route>
     </Routes>
   )
