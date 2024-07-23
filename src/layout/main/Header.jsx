@@ -5,6 +5,7 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 
 export default function Header() {
   const [menu, setMenu] = useState(false)
+  const {pathname} = useLocation()
 
     const [scrolled, setScrolled] = useState(false)
 
@@ -25,11 +26,11 @@ export default function Header() {
 
   return (
 
-    <header className={`sticky top-0 z-10   font-lato duration-500 ${!scrolled ? 'bg-transparent text-[#eee]' : 'bg-white text-black'}`}>
+    <header className={`sticky top-0 z-10   font-lato duration-500 ${!(scrolled || pathname.includes('/bond/')) ? 'bg-transparent text-[#eee]' : 'bg-white text-black'}`}>
         <div className="container mx-auto p-5 flex justify-between items-center">
 
         <div className="logo">
-            <img src={!scrolled ? '/logo/whitelogo.png' : '/logo/bluelogo.png'} className='w-[100px]'  alt="" />
+            <img src={!(scrolled || pathname.includes('/bond/')) ? '/logo/whitelogo.png' : '/logo/bluelogo.png'} className='w-[100px]'  alt="" />
         </div>
         <nav className=''>
             <ul className='hidden lg:flex gap-10 text font-semibold '>
