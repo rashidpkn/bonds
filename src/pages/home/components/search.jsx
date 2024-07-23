@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import bonds from '../../../data/bonds'
 
 export default function Search() {

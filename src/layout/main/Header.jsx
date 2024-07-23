@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { path } from '../../router/path';
 import { Icon } from '@iconify/react/dist/iconify.js';
@@ -68,10 +68,25 @@ export default function Header() {
 <ul className={` ${menu ? 'w-1/2' : 'w-0'} duration-200 
  p-3 flex flex-col overflow-hidden bg-primary text-white space-y-7 `}>
   <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={'/'}>Home</NavLink></li>
-  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.toUK}>Our Top UK Picks</NavLink></li>
-  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.topAustralian} >Our Top Australian Picks  </NavLink></li>
-  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.topCanadian} >Our Top Canadian Picks   </NavLink></li>
-  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.topEuropean} >Our Top European Picks </NavLink></li>
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.whyChooseBonds}>Why Choose Bonds?</NavLink></li>
+ 
+
+  <div className="relative group  ">
+  <li className="text-[20px] font-medium  border p-4  "><NavLink >Markets</NavLink></li>
+              
+            {/* <div className={`absolute border  font-thin text-base p-6 space-y-5 text-white w-[290px]  hidden group-hover:flex flex-col   -left-[140px]  `}>
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white "><NavLink to={path.toUK} >Our Top UK Picks</NavLink></li>
+            <hr className="w-[230px]" />
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white"><NavLink  to={path.topAustralian}>Our Top Australian Picks            </NavLink></li>
+            <hr className="w-[230px]" />
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white"><NavLink to={path.topCanadian} >Our Top Canadian Picks            </NavLink></li>
+            <hr className="w-[230px]" />
+            <li className="text-[20px] font-medium   hover:text-[#133269] text-white"><NavLink  to={path.topEuropean}>Our Top European Picks            </NavLink></li>
+
+            </div> */}
+            </div>
+  
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.contactUs} >Contact Us   </NavLink> </li>
 
 
 </ul>
