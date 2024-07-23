@@ -30,7 +30,7 @@ export default function TopUK() {
                 </thead>
                 <tbody>
 
-                    {Ukbonds.map(bond=><BondRow key={bond.issuerName}   bond={bond} />)}
+                    {Ukbonds.map(bond=><BondRow key={bond.isin}   bond={bond} />)}
                     
                 </tbody>
             </table>

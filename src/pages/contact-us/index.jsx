@@ -25,7 +25,7 @@ export default function ContactUs() {
 
         </div>
         <div className="">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5564811601635!2d-0.08233002301556562!3d51.52135240968345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb1990d6d4d%3A0x8f2bd1e8db41ad8e!2s20%20Primrose%20St%2C%20London%20EC2A%202EW%2C%20UK!5e0!3m2!1sen!2sus!4v1719550362212!5m2!1sen!2sus" width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5564811601635!2d-0.08233002301556562!3d51.52135240968345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb1990d6d4d%3A0x8f2bd1e8db41ad8e!2s20%20Primrose%20St%2C%20London%20EC2A%202EW%2C%20UK!5e0!3m2!1sen!2sus!4v1719550362212!5m2!1sen!2sus" width="600" height="450"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
 

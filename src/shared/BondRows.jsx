@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export const BondRow=({bond}) =>{
 
@@ -11,7 +12,11 @@ export const BondRow=({bond}) =>{
         <tr className='border cursor-pointer hover:bg-blue-950 hover:text-white duration-500' onClick={()=>setOpen(prev=>!prev)}>
                         <td align='left' className='border px-2 py-3'>{bond.issuerName}</td>
                         <td align='center' className='border px-2 py-3'>{bond.annualCouponRate}%</td>
-                        <td align='center' className='border px-2 py-3'>{bond.isin}</td>
+                        <td align='center' className='border px-2 py-3'>
+                            <Link to={`/bond/${bond.isin}`} title={`${bond.issuerName} bond`}>
+                                {bond.isin}
+                            </Link>
+                            </td>
                         <td align='center' className='border px-2 py-3'>{bond.frequency}</td>
                         <td align='center' className='border px-2 py-3'>{bond.type}</td>
                         <td align='center' className='border px-2 py-3'>{bond.issueDate}</td>
