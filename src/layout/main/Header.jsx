@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { path } from '../../router/path';
+import { Icon } from '@iconify/react/dist/iconify.js';
 
 export default function Header() {
+  const [menu, setMenu] = useState(false)
   const {  } = useLocation()
   const [] = useState("")
 
@@ -32,7 +34,7 @@ export default function Header() {
             <img src={!scrolled ? '/logo/whitelogo.png' : '/logo/bluelogo.png'} className='w-[100px]'  alt="" />
         </div>
         <nav className=''>
-            <ul className='flex gap-10 text font-semibold '>
+            <ul className='hidden lg:flex gap-10 text font-semibold '>
 
                 <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Home</Link></li>
                 <li><Link to={path.whyChooseBonds} className='cursor-pointer underline leading-loose'>Why Choose Bonds?</Link></li>
@@ -56,7 +58,25 @@ export default function Header() {
                 {/* <li><Link to={path.topNational} className='cursor-pointer underline leading-loose'>Top National Picks </Link></li> */}
                 <li><Link to={path.contactUs} className='cursor-pointer underline leading-loose'>Contact Us</Link></li>
             </ul>
+            <div className="flex lg:hidden z-10">
+            <Icon icon={!menu ? 'pajamas:hamburger' : 'eva:close-fill'} onClick={() => { setMenu(prev => !prev) }} className=' z-10 text-2xl' />
+          </div>
         </nav>
+        {<div className={`fixed h-screen  ${menu ? 'w-full' : 'w-0'} duration-500 bg-black/50 top-0 left-0 flex overflow-hidden`}>
+
+
+<ul className={` ${menu ? 'w-1/2' : 'w-0'} duration-200 
+ p-3 flex flex-col overflow-hidden bg-primary text-white space-y-7 `}>
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={'/'}>Home</NavLink></li>
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.toUK}>Our Top UK Picks</NavLink></li>
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.topAustralian} >Our Top Australian Picks  </NavLink></li>
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.topCanadian} >Our Top Canadian Picks   </NavLink></li>
+  <li className="text-[20px] font-medium  border p-4  "><NavLink onClick={()=>setMenu(false)} to={path.topEuropean} >Our Top European Picks </NavLink></li>
+
+
+</ul>
+
+</div>}
         </div>
     </header>
   )
