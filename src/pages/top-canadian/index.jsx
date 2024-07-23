@@ -1,4 +1,3 @@
-import React from 'react'
 import { canadianBonds } from '../../data/bonds'
 import { BondRow } from '../../shared/BondRows'
 
