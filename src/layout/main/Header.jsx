@@ -36,7 +36,7 @@ export default function Header() {
 
                 <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Home</Link></li>
                 <li><Link to={path.whyChooseBonds} className='cursor-pointer underline leading-loose'>Why Choose Bonds?</Link></li>
-                <li><Link to={path.bond1} className='cursor-pointer underline leading-loose'>bond1</Link></li>
+                {/* <li><Link to={path.bond1} className='cursor-pointer underline leading-loose'>bond1</Link></li> */}
 
                 {/* <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Markets </Link></li> */}
                 <div className="relative group ">

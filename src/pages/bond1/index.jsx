@@ -52,11 +52,8 @@ export default function Bond1() {
                                         <div className="flex flex-col">
                                             <label htmlFor="">Yield</label>
                                             <input type="text" class="h-14 w-40 border px-5" disabled="" value="7.5" />
-                                            {/* <input type="text" className='h-14 w-40 border px-5' placeholder="7.5"  disabled value={bond.annualCouponRate}/> */}
                                         </div>
-                                        {/* <button className="border h-14 mt-5 px-5 text-2xl rounded-2xl">
-                                           Calculate
-                                        </button> */}
+                                      
                                        {!!amount && <div className="flex justify-center items-center mt-5 text-2xl">
                                              &euro; {(amount* bond.annualCouponRate/100).toFixed(2)} per annum
                                        </div>}
