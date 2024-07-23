@@ -5,8 +5,6 @@ import { Icon } from '@iconify/react/dist/iconify.js';
 
 export default function Header() {
   const [menu, setMenu] = useState(false)
-  const {  } = useLocation()
-  const [] = useState("")
 
     const [scrolled, setScrolled] = useState(false)
 
@@ -38,9 +36,7 @@ export default function Header() {
 
                 <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Home</Link></li>
                 <li><Link to={path.whyChooseBonds} className='cursor-pointer underline leading-loose'>Why Choose Bonds?</Link></li>
-                {/* <li><Link to={path.bond1} className='cursor-pointer underline leading-loose'>bond1</Link></li> */}
 
-                {/* <li><Link to={'/'} className='cursor-pointer underline leading-loose'>Markets </Link></li> */}
                 <div className="relative group ">
               <NavLink  className='cursor-pointer underline leading-loose'>Markets</NavLink>
               
@@ -55,7 +51,6 @@ export default function Header() {
 
             </div>
             </div>
-                {/* <li><Link to={path.topNational} className='cursor-pointer underline leading-loose'>Top National Picks </Link></li> */}
                 <li><Link to={path.contactUs} className='cursor-pointer underline leading-loose'>Contact Us</Link></li>
             </ul>
             <div className="flex lg:hidden z-10">

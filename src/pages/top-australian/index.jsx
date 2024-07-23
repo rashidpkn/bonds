@@ -30,7 +30,7 @@ export default function TopAustralian() {
                 </thead>
                 <tbody>
 
-                    {australianBonds.map(bond=><BondRow key={bond.issuerName}   bond={bond} />)}
+                    {australianBonds.map(bond=><BondRow key={bond.isin}   bond={bond} />)}
                     
                 </tbody>
             </table>

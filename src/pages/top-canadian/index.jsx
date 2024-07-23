@@ -30,7 +30,7 @@ export default function TopCanadian() {
                 </thead>
                 <tbody>
 
-                    {canadianBonds.map(bond=><BondRow key={bond.issuerName}   bond={bond} />)}
+                    {canadianBonds.map(bond=><BondRow key={bond.isin}   bond={bond} />)}
                     
                 </tbody>
             </table>

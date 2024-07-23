@@ -31,7 +31,7 @@ export default function TopNational() {
                 </thead>
                 <tbody>
 
-                    {nationalBonds.map(bond=><BondRow key={bond.issuerName}   bond={bond} />)}
+                    {nationalBonds.map(bond=><BondRow key={bond.isin}   bond={bond} />)}
                     
                 </tbody>
             </table>
